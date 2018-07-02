@@ -1,0 +1,17 @@
+%grid
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-column-gap: $unit
+  margin: 0 auto
+  width: 90%
+
+  +mq-m
+    grid-template-columns: repeat(12, 1fr)
+    max-width: 400px
+    width: 80%
+
+
+%grid--golden-ratio
+  display: grid
+  // grid-template-rows:
+  grid-template-columns: 1fr #{$phi}fr $border-offset
